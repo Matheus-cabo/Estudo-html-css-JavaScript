@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="pagina-processa-dados-do-form" method="post">
+            <fieldset>
+                <legend>Dados Gerais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" minlength="3" id="nome" /> 
+                <label for="data_nascimento">Data de data_nascimento:</label>
+                <input type="text" id="data_nascimento" />
+                <label for="cpf">CPF:</label>
+                <input type="cpf" minlength="11" id="cpf" />
+            </fieldset>
+            <fieldset>
+                <legend>Endereco</legend>
+                <label for="tipo_endereco">Tipo:</label>
+                <select  id="tipo_endereco">
+                    <option value="">Selecione</option>
+                    <option value="">Rua</option>
+                    <option value="">Estrada</option>
+                    <option value="">Rodovia</option>
+                    <option value="">Outros</option>
+                </select>
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro_endereço">
+                <label for="numero_endereço">Numero:</label>
+                <input type="text" id="numero_endereço">
+                <label for="complemento_endereço">Complemento:</label>
+                <input type="text" id="complemento_endereço">
+            </fieldset>
+            <fieldset>
+                <legend>Fale Conosco</legend>
+                <label for="msg">Mensagem:</label>
+                <textarea type="text" id="msg"></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit">Enviar sua mensagem</button>
+                <button type="reset">Limpar o FDAormulário</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
