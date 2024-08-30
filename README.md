@@ -1,2 +1,2 @@
 ## Descrição 
-- Aprendendo Html básico pela faculdade estácio
+- Aprendendo Html,Css, JavaScript básico pela faculdade estácio
