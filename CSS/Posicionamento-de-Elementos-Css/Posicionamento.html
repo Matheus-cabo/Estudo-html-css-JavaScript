@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                font-size: 2rem;
+            }
+            /*todos os elementos em uma unica linha*/
+            #container-flexbox-row{
+                display: flex;
+                flex-direction: row;
+            }
+            #container-flebox-row div,
+            #container-flexbox-col div{
+                width:100%;
+                height: 50px;
+                background-color: green;
+            }
+            /*todos os elementos numa única coluna*/
+            #container-flexbox-col{
+                display: flex;
+                flex-direction: column;
+            }
+            #container-grid{
+                display: grid;
+                grid-template-columns: 100px 100px 100px 100px 100px;
+                /*grid-template-rows: 100px 200px 10px 100px 200px 10px;*/
+                color:#fff;
+            }
+            #container-grid div{
+                border: 1px solid #000;
+                background: #336666;
+            }
+            /*Posição absoluta - em relação ao elemento anterior*/
+            #container-absolute{
+                background-color: rgb(238,130,238);
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                border: 3px solid #73AD21;
+                color:#000;
+            }
+            /*Posição estática - posição natural*/
+            #container-static{
+                border: 3px solid #73AD21;
+                width: 300px;
+                background: rgb(106,90,205);
+            }
+            /*Posição relativa - em relação ao seu posicionamento normal*/
+            #container-relative{
+                position:relative;
+                left: 30px;
+                border: 3px solid #73AD21;
+                width: 300px;
+                background: rgb(106,90,205);
+            }
+            /*Posição fix - em relação a viewport*/
+            #container-fixed{
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 300px;
+                border: 3px solid #73AD21;
+                background: orange;
+            }
+            #container-static div,
+            #container-relative div,
+            #container-fixed div{
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexbox row</h1>
+        <div id="container-flebox-row">
+            <div>Flexbox1</div>
+            <div>Flexbox2</div>
+            <div>Flexbox3</div>
+        </div>
+        <h1>Flebox col</h1>
+        <div id="container-flexbox-col">
+            <div>Flexbox1</div>
+            <div>Flexbox2</div>
+            <div>Flexbox3</div>
+        </div>
+        <h1>Grid</h1>
+        <div id="container-grid">
+            <div>Col1</div>
+            <div>Col2</div>
+            <div>Col3</div> 
+            <div>Col4</div>
+            <div>Col5</div>
+            <div>Col6</div>
+        </div>
+        <h1>Posição Absoluta</h1>
+        <div id="container-absolute">
+            <div>
+                Absolute: posicionando em relação ao elemento anterior ou, na ausencia desse, em relação a tag body
+            </div>
+        </div>
+        <h1> Posição estática</h1>
+        <div id="container-static">
+            <div>
+                Static: posicionamento natural do elemento
+            </div>
+        </div>
+        <h1> Posição relativa</h1>
+        <div id="container-relative">
+            <div>
+                Relative: posicionamento em relação a sua posição natural(static).
+            </div>
+        </div>
+        <h1>Posição Fixa</h1>
+        <div id="container-fixed">
+            <div>
+                Fixed: posicionado de forma fix em relação a viewport.
+            </div>
+        </div>
+    </body>
+</html>
