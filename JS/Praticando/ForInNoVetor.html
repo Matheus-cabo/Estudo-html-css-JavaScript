@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>for...in</h2>
+        <p>Iteração nos elementos de um vetor:</p>
+        <p id="d1"></p>
+        <script>
+            const cars = ["BMW","Volvo","Saab","Ford"];
+            let text="";
+            for(let x in cars){
+                text+=cars[x] + "";//x é o índice no vetor  
+            }
+            document.getElementById("d1").innerHTML=text;
+        </script>
+    </body>
+</html>
